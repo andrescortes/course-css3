@@ -1,0 +1,31 @@
+h2,
+h3 {
+    font-size: 25px;
+    font-family: 'Arial';
+}
+
+/* selecciona a todos los a > descendientes */
+.contenedor a {
+    text-decoration: none;
+    color: firebrick;
+}
+
+/* Selecciona a los hijos directos de la clase contenedor */
+.contenedor>a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* selecciona al adyacente, al siguiente elemento en este caso el selector p */
+h2+p {
+    color: slateblue;
+}
+
+/* Selecciona a todos los elementos p que anteceda un h2 */
+h2~p {
+    color: gold;
+}
+
+h3~p {
+    color: indigo;
+}
